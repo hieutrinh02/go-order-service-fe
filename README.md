@@ -55,11 +55,14 @@ Required repository secrets:
 
 ```text
 EC2_SSH_KEY
+AWS_ROLE_TO_ASSUME
 ```
 
 Required repository variables:
 
 ```text
+AWS_REGION=
+EC2_SECURITY_GROUP_ID=
 EC2_HOST=
 EC2_USER=ubuntu
 FE_PROJECT_DIR=/home/ubuntu/go-order-service-fe
