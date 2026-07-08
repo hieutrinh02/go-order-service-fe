@@ -157,10 +157,15 @@ button:disabled {
 
 .notice {
   gap: 9px;
-  width: min(100%, 1100px);
+  width: 100%;
   min-height: 44px;
   padding: 11px 14px;
   border-radius: 8px;
+}
+
+.notice span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .notice.success {
