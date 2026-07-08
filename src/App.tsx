@@ -196,7 +196,8 @@ function App() {
             return;
         }
 
-        const form = new FormData(event.currentTarget);
+        const formElement = event.currentTarget;
+        const form = new FormData(formElement);
         const amount = Number(form.get("amount") ?? 0);
         const currency = String(form.get("currency") ?? "USD").trim().toUpperCase();
         const description = String(form.get("description") ?? "").trim();
@@ -210,7 +211,7 @@ function App() {
             });
             setOrders((current) => [order, ...current.filter((item) => item.id !== order.id)]);
             setNotice({ kind: "success", message: "Order created." });
-            event.currentTarget.reset();
+            formElement.reset();
         } catch (error) {
             setNotice({ kind: "error", message: readableError(error) });
         }
