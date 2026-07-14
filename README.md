@@ -1,4 +1,14 @@
-# Go Order Service FE
+<h1 align="center">Go Order Service FE</h1>
+
+<p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green" />
+  </a>
+  <a href="https://github.com/hieutrinh02/go-order-service-fe/actions/workflows/deploy.yml">
+    <img src="https://github.com/hieutrinh02/go-order-service-fe/actions/workflows/deploy.yml/badge.svg" />
+  </a>
+  <img src="https://img.shields.io/badge/Deploy-AWS_EC2-FF9900" />
+</p>
 
 React + Vite frontend for the Go Order Service API.
 
